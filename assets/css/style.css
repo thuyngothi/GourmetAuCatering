@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    font-family: 'Times New Roman', Georgia, serif;
+}
+
+.round {
+    border-radius: 5px;
+}
+.padding-item {
+    padding: 8px 16px;
+}
+.text-center {
+    text-align: center;
+}
+
+.grey-color {
+    color: grey;
+}
+
+.heading {
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 35px;
+    padding: 24px 0;
+    text-align: center;
+    padding: 24px 0;
+}
+
+#main {
+
+}
+
+/* CSS Header*/
+#header {
+    padding: 8px 16px;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.426);
+}
+#header p {
+    letter-spacing: 4px;
+    line-height: 1.5;
+}
+
+.nav li {
+    list-style: none;
+    float: left;
+    letter-spacing: 4px;
+    line-height: 1.5;
+}
+.nav li:hover {
+    background-color: #ccc;
+}
+.nav li a {
+    text-decoration: none;
+}
+
+/* CSS Banner*/
+#banner {
+    text-align: center;
+    position: relative;
+}
+#banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+#banner .quote {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    color: #000000;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+/* CSS Content*/
+#content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about {
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.about .img,
+.about .about-content{
+    width: 50%;
+    padding: 16px 24px;
+    min-width: 300px;
+}
+
+.about img {   
+    width: 100%;
+}
+
+.about-content .title {
+    letter-spacing: 5px;
+    padding: 24px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.about-content .desc {
+    line-height: 1.5;
+}
+.desc p {
+    padding: 12px 0;
+}
+
+/* CSS Menu*/
+.menu {
+    max-width: 1100px;
+    padding: 64px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu .menu-list,
+.menu .img {
+    padding: 16px 24px;
+    width: 50%;
+    min-width: 495px;
+}
+.menu img {
+    width: 100%;
+}
+.menu-item {
+    margin-bottom: 35px ;
+}
+.menu-item .title {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.menu-item .food-desc {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+
+/* CSS Contact */
+#contact {
+    max-width: 1100px;
+    margin: auto;
+    padding: 64px 16px;
+}
+
+#contact p {
+    margin: 15px 0;
+}
+
+#contact input {
+    display: block;
+    padding: 16px 8px;
+    width: 100%;
+    border: none;
+    line-height: 1.5;
+    border-bottom: 1px solid grey;
+}
+#contact .address {
+    color: #607d8b;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#contact button {
+    margin: 30px 8px;
+    padding: 8px 16px;
+    border: none;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+@media (max-width: 992px){
+    .menu{
+        flex-wrap: wrap;
+    }
+    .menu .menu-list,
+    .menu .img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .about {
+        flex-wrap: wrap;
+    }
+    .about .img,
+    .about .about-content{
+    width: 100%;
+    }  
+}
+
